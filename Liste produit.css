@@ -1,0 +1,477 @@
+*
+{
+    font-family: Encode Sans;
+}
+
+:root
+{
+    --color-green: #006c58;
+    --color-greenopacite30: #006c5866;
+    --color-green-transparent: #006c5890;
+    --green-hover: #00a284;
+    --color-sage: #FFE7CE;
+    --border-radius-card: 10px;
+    --border-radius-el: 5px;
+    --width-bar: 100%;
+    --width-pad: 20vw;
+    --pad-padding: 8px;
+    --top-mg: var(--border-radius-card);
+    --primary-padding: 10px;
+}
+
+body
+{
+    display: flex;
+    flex-direction: row;
+    padding: var(--border-radius-card);
+}
+
+/*====================================== SIDE BAR============================================*/
+
+.sideBar
+{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: var(--width-pad);
+    background-color: rgb(255, 255, 255);
+}
+
+.loginPad
+{
+    background-color: var(--color-green);
+    padding: var(--pad-padding);
+    border-radius: var(--border-radius-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--width-bar);
+    line-height: 2px;
+    color: var(--color-sage);
+}
+
+.logo
+{
+    color: var(--color-sage);
+    font-family: Freckle Face;
+    font-size: 2em;
+}
+
+.uil,
+.uis
+{
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.account
+{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    align-items: center;
+}
+
+/*==================MENU PAD*/
+
+.menuPad
+{
+    width: var(--width-bar);
+    border-radius: var(--border-radius-card);
+    background-color: var(--color-green-transparent);
+    height: fit-content;
+    margin-top: var(--top-mg);
+    padding: var(--pad-padding);
+}
+
+.links
+{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-green);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: var(--pad-padding);
+    color: var(--color-sage);
+    border-radius: var(--border-radius-el);
+    margin-bottom: 5px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.links:hover
+{
+    background-color: var(--green-hover);
+    cursor: pointer;
+}
+
+.link-content
+{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    align-items: center;
+    justify-content: left;
+}
+
+.headlines
+{
+    margin-left: 10px;
+    text-align: left;
+}
+
+a :nth-child()
+{
+    margin-bottom: 10px;
+}
+
+a :last-child
+{
+    margin-bottom: 0px;
+}
+
+/*===================================END SIDEBAR============================*/
+
+/*==============================-------- MAIN -------------=================*/
+.main
+{
+    /* background-color: var(--color-sage); */
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headpad
+{
+    color: var(--color-sage);
+    background-color: var(--color-green);
+    padding: var(--primary-padding);
+    border-radius: var(--border-radius-card);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    line-height: 10px;
+}
+
+.headpad p
+{
+    font-weight: bold;
+}
+
+.headpad>h1,
+.headpad>p
+{
+    margin-left: var(--border-radius-card);
+}
+
+.pad-vente
+{
+    background-color: var(--color-sage);
+    border-radius: var(--border-radius-card);
+    margin-top: var(--border-radius-card);
+    display: flex;
+    flex-direction: column;
+    padding: var(--pad-padding);
+}
+
+.pad-vente .sub
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.field
+{
+    background-color: var(--color-green);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    line-height: 5px;
+    padding: var(--pad-padding);
+    border-radius: var(--border-radius-el);
+    font-weight: bold;
+}
+
+.header .field
+{
+    margin-left: 10px;
+}
+
+.field select
+{
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-weight: bold;
+    border-radius: var(--border-radius-el);
+    margin-left: 8px;
+}
+
+select option
+{
+    background-color: var(--color-green);
+    padding: var(--pad-padding);
+    color: var(--color-sage);
+    font-weight: bold;
+}
+
+select option :checked
+{
+    background-color: var(--color-sage);
+    padding: var(--pad-padding);
+    color: var(--color-green);
+    font-weight: bold;
+}
+
+.footer
+{
+    margin-top: 10px;
+}
+
+/*==============================-------- MAIN -------------=================*/
+
+.sous_section
+{
+    background-color: var(--color-green);
+    height: 50px;
+    /* margin-left: 10px; */
+    padding: var(--pad-padding);
+    max-width: -3px;
+    /* width: 275px; */
+    border-radius: var(--border-radius-card) var(--border-radius-card) var(--border-radius-card) var(--border-radius-card);
+    color: var(--color-sage);
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+.sous_section2
+{
+    background-color: var(--color-green);
+    height: 50px;
+    /* margin-left: 10px; */
+    padding: var(--pad-padding);
+    width: 30%;
+    /* width: 275px; */
+    border: none;
+    border-radius: var(--border-radius-card) var(--border-radius-card) var(--border-radius-card) var(--border-radius-card);
+    color: var(--color-sage);
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+/*==============================-------- MAIN -------------=================*/
+
+.section3
+{
+    background-color: var(--color-greenopacite30);
+    height: 50px;
+    padding: var(--pad-padding);
+    max-width: -3px;
+    border-radius: 0 0 var(--border-radius-card) var(--border-radius-card);
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+/*==============================-------- MAIN -------------=================*/
+
+.sous_section4
+{
+    height: 50px;
+    /* margin-left: 10px; */
+    padding: var(--pad-padding);
+    max-width: -3px;
+    /* width: 275px; */
+    border-radius: var(--border-radius-card) var(--border-radius-card) 0 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    align-items: center;
+    justify-content: center;
+}
+
+table
+{
+    border-spacing: 0 5px;
+}
+
+table th
+{
+    background-color: var(--color-green);
+    border: none;
+    padding: 20px;
+    color: var(--color-sage);
+}
+
+tr th:first-child
+{
+    border-top-left-radius: var(--border-radius-card);
+}
+
+tr th:last-child
+{
+    border-top-right-radius: var(--border-radius-card);
+}
+
+tr td:first-child
+{
+    border-bottom-left-radius: var(--border-radius-card);
+}
+
+tr td:last-child
+{
+    border-bottom-right-radius: var(--border-radius-card);
+}
+
+table td
+{
+    color: black;
+    background-color: #006c585a;
+    width: 10%;
+}
+
+/* -------------------FIN DE LA CLASSE MAIN------------------ */
+.largeur
+{
+    background-color: #8d8585;
+}
+
+input::placeholder
+{
+    color: #006c58;
+    align-items: center;
+    justify-content: center;
+}
+
+.bouton
+{
+    background-color: var(--color-green);
+    border: none;
+}
+
+select
+{
+    width: 100%;
+    border: none;
+    background-color: #8d8585;
+}
+
+input
+{
+    border: none;
+}
+
+.entete2
+{
+    width: 100%;
+    background-color: #fff;
+}
+
+.entete1
+{
+    border-radius: var(--border-radius-card) var(--border-radius-card) 0 0;
+    background-color: #006c58;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    color: var(--color-sage);
+}
+
+.form .bouton
+{
+    margin-top: 5px;
+}
+
+.form .entete2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input,
+.form select
+{
+    margin-bottom: 16px;
+    height: 30px;
+}
+
+.form
+{
+    flex-direction: column;
+}
+
+.form label
+{
+    margin-bottom: 10px;
+}
+
+.contenu
+{
+    top: 50%;
+    left: 40%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: var(--border-radius-card) var(--border-radius-card) var(--border-radius-card) var(--border-radius-card);
+}
+
+/* Ajoutez ces styles CSS pour l'animation */
+.nouveau-produit-section
+{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.219);
+    padding: 20%;
+    z-index: 999;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.nouveau-famille-section
+{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.219);
+    padding: 5%;
+    z-index: 999;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+}

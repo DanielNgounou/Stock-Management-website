@@ -1,0 +1,738 @@
+*{
+    font-family: Encode Sans;
+}
+
+:root{
+    --color-green: #006c58;
+    --color-green-transparent: #006c5890;
+    --green-hover: #00a284;
+    --color-sage: #FFE7CE;
+    --color-sage-hover: #fff2e4;
+    --border-radius-card: 10px;
+    --border-radius-el: 5px;
+    --width-bar: 100%;
+    --width-pad: 20vw;
+    --pad-padding: 8px;
+    --top-mg: 20px;
+    --primary-padding: 10px;
+    --thin-padding-pad: 5px;
+    --ok-background: #736455;
+    --ok-background-hover: rgb(136, 92, 47);
+    --light-gray: #D9D9D9;
+    --dim-gray: rgb(135, 135, 135);
+    --sage-hover: #ffd7ac;
+    --dark-green: #00241e;
+    --dark-green-transparent: #00241eaf;
+    --color-green-very-transparent: #006c5869;
+
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    /* background-color: #002922; */
+}
+
+/*======================================SIDE BAR============================================*/
+
+.sideBar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: var(--width-pad);
+}
+
+.loginPad{
+    background-color: var(--color-green);
+    padding: var(--pad-padding);
+    border-radius: var(--border-radius-card)  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--width-bar);
+    line-height: 2px;
+    color: var(--color-sage);
+}
+.logo{
+    color: var(--color-sage);
+    font-family: Freckle Face;
+    font-size: 2em;
+}
+.uil,.uis{
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+.account{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    align-items: center;
+}
+
+/*==================MENU PAD*/
+
+.menuPad{
+    width: var(--width-bar);
+    border-radius: var(--border-radius-card);
+    background-color: var(--color-green-transparent);
+    height: fit-content;
+    margin-top: var(--top-mg);
+    padding: var(--pad-padding);
+}
+
+.links{
+    all: unset;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: var(--color-green);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: var(--pad-padding);
+    color: var(--color-sage);
+    border-radius: var(--border-radius-el);
+    margin-bottom: 5px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.links:hover{
+    background-color: var(--green-hover);
+    cursor: pointer;
+}
+.link-content{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    align-items: center;
+    justify-content: left;
+}
+
+.link-content .uil,.uis{
+    
+}
+.headlines{
+    margin-left: 10px;
+    text-align: left;
+}
+
+.dropdown{
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-content .links{
+    background-color: var(--color-sage);
+    color: var(--color-green);
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-content .links:hover{
+    background-color: var(--sage-hover);
+}
+.dropdown-content{
+    display: none;
+
+}
+
+.dropdown:hover{
+    .dropdown-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+a :nth-child(){
+    margin-bottom: 10px;
+}
+a :last-child{
+    margin-bottom: 0px;
+}
+
+/*===================================END SIDEBAR============================*/
+
+/*==============================-------- MAIN -------------=================*/
+.main{
+    /* background-color: var(--color-sage); */
+    color: var(--color-sage);
+    margin-left: 22vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headpad{
+    background-color: var(--color-green);
+    padding: var(--primary-padding);
+    border-radius: var(--border-radius-card);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    line-height: 10px;
+}
+
+.headpad p{
+    font-weight: bold;
+}
+
+.headpad > h1, .headpad > p{
+    margin-left: 20px;
+}
+/*================================ End Headpad =====================================================*/
+
+/*===============================================Pad vente =========================================*/
+.pad-vente{
+    background-color: var(--color-sage);
+    border-radius: var(--border-radius-card);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: var(--pad-padding);
+    line-height: 5px;
+}
+
+.pad-vente .sub{
+    display: flex;
+    flex-direction: row;
+}
+.header.field{
+    height: 100%;
+}
+.datetime{
+    background-color: var(--color-green);
+    padding: var(--pad-padding);
+    border-radius: var(--border-radius-el);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.datetime .uil-calendar-alt{
+    margin-left: 10px;
+}
+
+.datetime span{
+    color: white;
+}
+.produit{
+    background-color: var(--color-green);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    line-height: 5px;
+    padding: var(--thin-padding-pad);
+    border-radius: var(--border-radius-el);
+    font-weight: bold;
+}
+.field{
+    background-color: var(--color-green);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    line-height: 5px;
+    padding: var(--pad-padding);
+    border-radius: var(--border-radius-el);
+    font-weight: bold;
+    text-align: center;
+}
+
+.header .field{
+    margin-left: 5px;
+}
+
+.field select,.produit select{
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 2px;
+    font-weight: bold;
+    border-radius: var(--border-radius-el);
+    margin-left: 8px;
+}
+
+select option{
+    background-color : var(--color-green);
+    padding: var(--pad-padding);
+    color: var(--color-sage);
+    font-weight: bold;
+}
+
+select option :checked{
+    background-color : var(--color-sage);
+    padding: var(--pad-padding);
+    color: var(--color-green);
+    font-weight: bold;
+}
+
+
+
+.footer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.field input{
+    margin-left: 10px;   
+    padding: 2px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: var(--border-radius-el);
+    border: none;
+}
+
+/* .input[type-text]{
+    width: 100px;
+}
+input[type=number]{
+    width: 60px;
+} */
+
+.footer .field:first-child{
+    margin-left: 0px;
+}
+.footer .field{
+    margin-left: 5px;
+
+}
+
+.footer .field label{
+    width: 100%;
+    line-height: 18px;
+}
+
+#glow{
+    background-color: var(--color-green);
+    transition: all 0.3s ease-in-out;
+}
+
+.Ok{
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    border: none;
+    background-color: var(--ok-background);
+    border-radius: var(--border-radius-el);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.Ok:hover{
+    background-color: var(--ok-background-hover);
+    cursor: pointer;
+}
+
+.enregistrer{
+    
+}
+
+/*==============================End pad-vente==========================*/
+
+
+/* --------------------------panier-client------------------- */
+
+.panier-client{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--ok-background); */
+    height: 100%;
+    margin-top: 30px;
+}
+
+.panier-client-pad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-green);
+    border-radius: var(--border-radius-card);
+    padding: var(--primary-padding);
+    font-weight: bold;
+    color: var(--color-sage);
+
+}
+
+.panier-client-pad p{
+    margin: 0px;
+    font-size: 1.2em;
+}
+
+.panier-client-pad .total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+.total input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin-left: 5px;
+    width: 40%;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+
+
+#table{
+    margin-top: 5px;
+    border-spacing: 0 5px;
+}
+
+tr{
+    background-color: var(--light-gray);
+    transition: all 0.3s ease-in-out;
+}
+
+tr td{
+    padding: var(--primary-padding);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:first-child{
+    background-color: var(--color-sage);
+}
+
+tr th{
+    padding: var(--pad-padding);
+    color:var(--color-sage);
+    background-color: var(--color-sage);
+}
+
+tr th p{
+    margin: 0px;
+    padding: var(--thin-padding-pad);
+    background-color: var(--color-green);
+    color: var(--color-sage);
+    border-radius: var(--border-radius-el);
+}
+
+tr th:first-child{
+    border-top-left-radius: var(--border-radius-el);
+    border-bottom-left-radius: var(--border-radius-el);
+}
+
+tr th:last-child{
+    border-top-right-radius: var(--border-radius-el);
+    border-bottom-right-radius: var(--border-radius-el);
+}
+
+tr td:first-child{
+    border-top-left-radius: var(--border-radius-el);
+    border-bottom-left-radius: var(--border-radius-el);
+}
+
+tr td:last-child{
+    border-top-right-radius: var(--border-radius-el);
+    border-bottom-right-radius: var(--border-radius-el);
+}
+
+tr td .uil{
+    padding: var(--thin-padding-pad);
+    color: var(--color-sage);
+    background-color: var(--color-green);
+    border-radius: var(--border-radius-el);
+    transition: all 0.3s ease-in-out;
+}
+
+
+tr td .uil:hover{
+    cursor: pointer;
+    background-color: var(--green-hover);
+}
+
+tr:hover{
+    background-color: var(--dim-gray);
+}
+/* --------------------------panier-client------------------- */
+/*==============================-------- MAIN -------------=================*/
+
+
+/* ======================================================COMMANDECLIENT =========================================*/
+.headings{
+    background-color: var(--color-green);
+    padding: 8px;
+    line-height: 1px;
+    margin-top: var(--top-mg);
+    border-radius: var(--border-radius-card);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em
+}
+
+.option-items{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-sage);
+    margin-right: 1.5em;
+    line-height: 1em;
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--color-green);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 14em;
+}
+
+.option-items:hover{
+    background-color:var(--color-sage-hover);
+    box-shadow: 0px 0px 12px 6px var(--color-sage);
+}
+
+.option-items .image{
+    width: 8em;
+    height: 8em;
+}
+
+/* ===================================== popups =============== */
+
+.wholePopup .popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)  scale(0); 
+    background-color: white;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-card);
+    overflow: hidden;
+    box-shadow: 0px 0px 12px 6px var(--dark-green);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.popupHead{
+    top: 0;
+    background-color: var(--color-green);
+    height: 100%;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup form{
+    padding: 20px;
+}
+
+.popup .popupBody{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+.popup .fill{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:left;
+    color: black;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.popup .fill select{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 2px;
+    font-weight: bold;
+    border-radius: var(--border-radius-el);
+    height: 2.5em;
+    background-color: var(--dim-gray);
+}
+
+.popup .fill input{
+    height: 2.5em;
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: var(--border-radius-el);
+    color: var(--dark-green);
+    font-weight: bold;
+    text-indent: 10px;
+}
+
+.popup .fill input::placeholder{
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+.popupfooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    all: unset;
+    padding: var(--pad-padding);
+    background-color: var(--color-green);
+    font-weight: bold;
+    border-radius: var(--border-radius-el);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--green-hover);
+    cursor: pointer;
+}
+
+button:nth-child(2){
+    margin-left: 5px;
+}
+
+.wholePopup .popup-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* transform: translate(-50%,-50%); */
+    background-color: var(--dark-green-transparent);
+    display: none;
+}
+
+.wholePopup.active .popup-bg{
+    display: block;
+}
+
+.wholePopup.active .popup{
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* ======================Rapport============================ */
+
+.export{
+    margin-top: var(--top-mg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+.export-items{
+    background-color: var(--color-green-very-transparent);
+    padding: var(--pad-padding);
+    border-radius: var(--border-radius-card);
+}
+
+.export-items p{
+    font-weight: bold;
+    color: #006c58;
+}
+
+.export-actions{
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+}
+
+/* specified */
+.enregistrer{
+    background-color: var(--color-sage);
+    color: var(--color-green);
+    transition: all 0.3s ease-in-out;
+}
+
+.enregistrer:hover{
+    color: var(--color-sage);
+    background-color: var(--green-hover);
+}
+
+/* buttons */
+.button-links{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-green);
+    padding: var(--pad-padding);
+    font-weight: bold;
+    border-radius: var(--border-radius-card);
+    width: fit-content;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: var(--color-sage);
+    margin-left: 10px;
+}
+
+.button-links:hover{
+    background-color: var(--green-hover);
+    cursor: pointer;
+}
+
+/*===================Gestion clients========================*/
+
+.grid{
+    margin-top: var(--top-mg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grid1{
+    width: 100%;
+}
+.grid1 #table{
+    margin-top: 0px; 
+    width: 100%;  
+}
+
+.adresse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.adresse .button-addresses{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-sage);
+    margin-right: 1.5em;
+    line-height: 1em;
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--color-green);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 14em;
+}
